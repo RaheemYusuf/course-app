@@ -1,0 +1,26 @@
+2025-08-26 14:08:32.472 | INFO     | __main__:main:26 - running the application...
+2025-08-26 14:08:32.482 | INFO     | model.model_service:load_model:46 - checking the existence of the model config file at model\models/rf_db_v2
+2025-08-26 14:08:32.482 | INFO     | model.model_service:load_model:62 - model rf_db_v2 exists! --> loading model config file
+2025-08-26 14:08:32.516 | INFO     | model.model_service:predict:83 - making prediction!
+2025-08-26 14:08:32.537 | INFO     | __main__:main:41 - prediction = [2068.63613781]
+2025-08-26 14:09:34.264 | INFO     | __main__:main:26 - running the application...
+2025-08-26 14:09:34.267 | INFO     | model.model_service:load_model:46 - checking the existence of the model config file at model\models/rf_db_v2
+2025-08-26 14:09:34.268 | WARNING  | model.model_service:load_model:56 - model at model\models\rf_db_v2 was not found -> building rf_db_v2 model
+2025-08-26 14:09:34.268 | INFO     | model.pipeline.model:build_model:31 - starting up model building pipeline
+2025-08-26 14:09:34.268 | INFO     | model.pipeline.data_preparation:prepare_data:26 - Starting up preprocessing pipeline
+2025-08-26 14:09:34.268 | INFO     | model.pipeline.data_collection:load_data:21 - Loading data from data/rent_apartments.csv
+2025-08-26 14:09:34.284 | INFO     | model.pipeline.data_preparation:_encode_cat_cols:40 - Encoding categorical columns: ['balcony', 'parking', 'furnished', 'garage', 'storage']
+2025-08-26 14:09:34.289 | INFO     | model.pipeline.data_preparation:_parse_garden_cols:58 - Parsing garden column
+2025-08-26 14:09:34.291 | INFO     | model.pipeline.model:_get_x_y:80 - defining X and Y variables. X vars: ['area', 'constraction_year', 'bedrooms', 'garden', 'balcony_yes', 'parking_yes', 'furnished_yes', 'garage_yes', 'storage_yes']; y var: rent
+2025-08-26 14:09:34.292 | INFO     | model.pipeline.model:_split_train_test:99 - splitting data into train and test sets
+2025-08-26 14:09:34.294 | INFO     | model.pipeline.model:_train_model:122 - training a model with hyperparameters
+2025-08-26 14:10:05.188 | INFO     | model.pipeline.model:_evaluate_model:163 - evaluating model performance. SCORE=0.7730329795317243
+2025-08-26 14:10:05.188 | INFO     | model.pipeline.model:_save_model:178 - saving a model to a directory: model\models/rf_db_v2
+2025-08-26 14:10:05.228 | INFO     | model.model_service:load_model:62 - model rf_db_v2 exists! --> loading model config file
+2025-08-26 14:10:05.299 | INFO     | model.model_service:predict:83 - making prediction!
+2025-08-26 14:10:05.326 | INFO     | __main__:main:41 - prediction = [2344.59972222]
+2025-08-27 15:46:13.751 | INFO     | __main__:main:26 - running the application...
+2025-08-27 15:46:13.752 | INFO     | model.model_service:load_model:46 - checking the existence of the model config file at model/models/rf_db_v2
+2025-08-27 15:46:13.752 | INFO     | model.model_service:load_model:62 - model rf_db_v2 exists! --> loading model config file
+2025-08-27 15:46:13.813 | INFO     | model.model_service:predict:83 - making prediction!
+2025-08-27 15:46:13.830 | INFO     | __main__:main:41 - prediction = [2344.59972222]
