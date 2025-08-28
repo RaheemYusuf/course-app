@@ -28,7 +28,6 @@ def create_table_and_insert_data():
         print("Table created and data inserted successfully!")  # noqa: WPS421
 
 
-
 # Run the function to create the table and insert data
 print(create_table_and_insert_data())  # noqa: WPS421
 
