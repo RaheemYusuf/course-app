@@ -5,7 +5,7 @@ run:
 	cd src; poetry run python runner.py;
 
 install: pyproject.toml
-	poetry install
+	poetry install --no-root
 
 clean:
 	rm -rf `find . -type d -name __pycache__`
